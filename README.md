@@ -1,12 +1,15 @@
 # travelopia-backend
 
 1. Install project dependencies:
+
 npm install
 
 2. Setup dB:
+
 Make database for backend. Follow below instructions to setup local database.
 
 Setting Up a local database
+
 To run the application locally, you need to setup a postgres database on your system.
 
 Install postgres
