@@ -4,6 +4,8 @@ const app = express()
 const cors = require('cors')
 const port = 3001
 const db = require('./queries')
+module.exports = app.listen(3002);
+
 
 app.use(bodyParser.json())
 app.use(
@@ -25,4 +27,6 @@ app.post('/booking/create', db.createBooking)
 app.listen(port, () => {
     console.log(`App running on port ${port}.`)
   })
+
+
   
