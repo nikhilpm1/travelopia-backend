@@ -27,4 +27,7 @@ const getAllBookings = (request, response) => {
     })
   }
 
-  
+  module.exports = {
+    getAllBookings,
+    createBooking,
+  }
