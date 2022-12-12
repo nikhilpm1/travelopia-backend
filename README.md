@@ -1,49 +1,55 @@
-# travelopia-backend
+# Travelopia Backend
 
-1. Install project dependencies:
+### 1. Install project dependencies:
 
-npm install
+`npm install`
 
-2. Setup dB:
+### 2. Setup dB:
 
-Make database for backend. Follow below instructions to setup local database.
+Make database for backend.
+Follow below instructions to setup local database.
 
-Setting Up a local database
+##### Setting Up a local database
 
 To run the application locally, you need to setup a postgres database on your system.
 
 Install postgres
 
-sudo apt install postgresql libpq-dev
+`sudo apt install postgresql libpq-dev`
 
 Login as the 'postgres' user and start postgres shell
 
-sudo su - postgres
+`sudo su - postgres`
 
-psql
+`psql`
 
-Create a user for the application. Remember to wrap your password in single quotes.
+Create a user for the application.
+Remember to wrap your password in single quotes.
 
-create user expressuser with password 'password123';
+`create user expressuser with password 'password123';`
 
 Create a database and give permissions for the above user
 
-create database expbackend;
+`create database expbackend;`
 
-grant ALL privileges on database expbackend to expressuser;
+`grant ALL privileges on database expbackend to expressuser;`
 
 Give permissions to the user to create database so that test databases can be created
 
-ALTER USER expressuser CREATEDB;
+`ALTER USER expressuser CREATEDB;`
 
-3. Setup .env files
-Use env.example files for creating local .env files
+### 3. Setup .env files
 
-4. Migrate the Models to dB
-npm run db:migrate
+Use `env.example` files for creating local .env files
 
-5. Run the Server
-npm start
+### 4. Migrate the Models to dB
 
-6. Run tests
-npm run test
+`npm run db:migrate`
+
+### 5. Run the Server
+
+`npm start`
+
+### 6. Run tests
+
+`npm run test`
