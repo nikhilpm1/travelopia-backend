@@ -26,21 +26,17 @@ Login as the 'postgres' user and start postgres shell
 Create a user for the application.
 Remember to wrap your password in single quotes.
 
-`create user expressuser with password 'password123';`
+`create user postgres with password 'nikhilpm';`
 
 Create a database and give permissions for the above user
 
-`create database expbackend;`
+`create database travelopia_users;`
 
-`grant ALL privileges on database expbackend to expressuser;`
+`grant ALL privileges on database travelopia_users to postgres;`
 
 Give permissions to the user to create database so that test databases can be created
 
 `ALTER USER expressuser CREATEDB;`
-
-### 3. Setup .env files
-
-Use `env.example` files for creating local .env files
 
 ### 4. Migrate the Models to dB
 
